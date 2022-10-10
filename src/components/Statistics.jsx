@@ -1,17 +1,29 @@
-export const Statistics = ({title, stats}) => {
-    return <section class="statistics">
-        {title&&(<h2 class="title">Upload stats</h2>)}
-  
+import PropTypes from 'prop-types';
 
-        <ul class="stat-list">
-            {stats.map(stat => (
-                <li class="item" key={stat.id}>
-      <span class="label">{stat.label}</span>
-      <span class="percentage">{stat.percentage}</span>
-    </li>
-            )
+export const Statistics = ({ title, stats }) => {
+  return (
+    <section class="statistics">
+      {title && <h2 class="title">Upload stats</h2>}
 
-            )}
-    </ul>
-</section>
-}
+      <ul class="stat-list">
+        {stats.map(stat => (
+          <li class="item" key={stat.id}>
+            <span class="label">{stat.label}</span>
+            <span class="percentage">{stat.percentage}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+};
