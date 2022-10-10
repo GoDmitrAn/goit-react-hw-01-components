@@ -12,10 +12,10 @@ export const App = () => {
   return (
     <div>
     <Profile avatar={user.avatar} name={user.username}
-      location={user.location} stats={user.stats} tag={user.tag} />;
-      <Statistics title="Upload stats" stats={data} />;
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      location={user.location} stats={user.stats} tag={user.tag} />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
-export const Profile = ({name,tag,location,avatar,stats}) => {
+// import PropTypes from 'prop-types';
+export const Profile = ({ name, tag, location, avatar, stats }) => {
     return<div class="profile">
   <div class="description">
     <img
@@ -27,3 +28,10 @@ export const Profile = ({name,tag,location,avatar,stats}) => {
   </ul>
 </div>
 };
+
+// Profile.PropTypes = {
+//   name: PropTypes.string,
+//   tag: PropTypes.string,
+//   location: PropTypes.string,
+
+// };
