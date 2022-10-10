@@ -1,4 +1,4 @@
-export const Profile = ({profile:{username,tag,location,avatar,stats}}) => {
+export const Profile = ({name,tag,location,avatar,stats}) => {
     return<div class="profile">
   <div class="description">
     <img
@@ -6,8 +6,8 @@ export const Profile = ({profile:{username,tag,location,avatar,stats}}) => {
       alt="User avatar"
       class="avatar"
     />
-            <p class="name">{username }</p>
-    <p class="tag">{tag}</p>
+            <p class="name">{name }</p>
+    <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
   </div>
 
