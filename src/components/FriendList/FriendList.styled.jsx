@@ -26,4 +26,6 @@ export const ItemStatus = styled.span`
   }};
 `;
 export const ItemAvatar = styled.img``;
-export const ItemName = styled.p``;
+export const ItemName = styled.p`
+  font-weight: bold;
+`;

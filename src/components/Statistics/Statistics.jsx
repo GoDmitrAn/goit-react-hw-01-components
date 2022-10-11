@@ -19,7 +19,7 @@ export const Statistics = ({ title, stats }) => {
           <StatisticsListItem key={stat.id} color={getRandomHexColor()}>
             <StatisticsItemLabel>{stat.label}</StatisticsItemLabel>
             <StatisticsItemPercentage>
-              {stat.percentage}
+              {stat.percentage}%
             </StatisticsItemPercentage>
           </StatisticsListItem>
         ))}
