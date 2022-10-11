@@ -5,6 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  gap: 20px;
+  gap: 40px;
   background-color: #dcdadb;
 `;
