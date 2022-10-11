@@ -2,8 +2,9 @@ import styled from '@emotion/styled';
 
 export const TransactionHistoryTable = styled.table`
   min-width: 300px;
-  text-align: center;
+
   background-color: #fff;
+  border: 1px solid #e1e1e1;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 `;
@@ -15,7 +16,7 @@ export const TableHeadItem = styled.th`
   text-transform: uppercase;
 `;
 export const TableBodyItem = styled.td`
-  padding: 10px 0;
+  padding: 10px 30px;
   &:not(:last-child) {
     border-right: 1px solid #e1e1e1;
   }
